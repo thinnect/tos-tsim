@@ -1,0 +1,15 @@
+# logfile, channel
+stdout, dbgchannel
+stdout, AM
+stdout, Packet
+stdout, At45db
+stdout, avrwdt
+stdout, Serial
+
+leds.txt, LedsC
+
+lights.txt, LightsOut
+
+packets.txt, packets
+
+bridge.txt, BridgeStation
