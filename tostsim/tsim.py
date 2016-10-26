@@ -24,12 +24,15 @@ def find_2nd(str1, substr1):
 
 
 def format_log_line(line):
-    l = line.find(" E|")
+    l = line.find(" I|")
     if l >= 0:
-        return '\033[91m' + line.rstrip() + '\033[0m'
+        return '\033[97m' + line.rstrip() + '\033[0m'
     l = line.find(" W|")
     if l >= 0:
         return '\033[93m' + line.rstrip() + '\033[0m'
+    l = line.find(" E|")
+    if l >= 0:
+        return '\033[91m' + line.rstrip() + '\033[0m'
     return line.rstrip()
 
 
